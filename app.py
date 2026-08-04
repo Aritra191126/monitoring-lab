@@ -1,5 +1,6 @@
 import random, time 
 from fastapi import FastAPI, HTTPException
+from prometheus_fastapi_instrumentator import Instrumentator
 app = FastAPI()
 
 @app.get("/fast")
@@ -13,4 +14,5 @@ def flaky():
     if random.random() < 0.3:
         raise HTTPException(status_code=500, detail="random_failure")    
     return {"status":"ok"} 
-   
+
+Instrumentator().instrument(app).expose(app)
