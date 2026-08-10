@@ -1,0 +1,10 @@
+groups:
+  - name: flaky_alerts
+    rules:
+      - alert: FlakyHighErrorRate
+        expr: rate(https_requests_total{handler="/flaky", status="5xx"}[5m])/rate(https_requests_total{handler="/flaky"}[5m]) > 0.35
+        for: 30s
+        labels:
+          severity: warning
+        annotations:
+          summary: "Flaky endpoint error rate above 35%"  
