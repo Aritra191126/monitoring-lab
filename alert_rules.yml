@@ -8,3 +8,12 @@ groups:
           severity: warning
         annotations:
           summary: "Flaky endpoint error rate above 35%"  
+  - name: redis_alerts
+    rules:
+      - alert: RedisTooManyConnections
+        expr: redis_connected_clients > 20
+        for: 15s
+        labels:
+          severity: warning
+        annotations: 
+          summary: "Redis has more than 20 connected clients"        
