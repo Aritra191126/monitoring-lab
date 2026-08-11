@@ -18,10 +18,10 @@ docker run -d --name prometheus -p 9090:9090 \
   -v $(pwd)/alert_rules.yml:/etc/prometheus/alert_rules.yml \
   prom/prometheus:latest
 
-#echo "Starting Grafana..."
-#docker start grafana 2>/dev/null || docker run -d --name grafana \
-#  -p 3000:3000 \
-#  grafana/grafana:latest
+echo "Starting Grafana..."
+docker start grafana 2>/dev/null || docker run -d --name grafana \
+  -p 3000:3000 \
+  grafana/grafana:latest
 
 echo "All services started. Run ./run.sh in another terminal to start your app."
 docker ps

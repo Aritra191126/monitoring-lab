@@ -6,7 +6,7 @@ app = FastAPI()
 @app.get("/fast")
 def fast():
     return {"status":"ok"}
-@app.get("slow")
+@app.get("/slow")
 def slow():
     time.sleep(random.uniform(0.1,0.5))
 @app.get("/flaky")
