@@ -1,0 +1,1 @@
+docker run -d --name postgres-exporter -p 9187:9187 -e DATA_SOURCE_NAME="postgresql://post

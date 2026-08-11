@@ -22,6 +22,9 @@ echo "Starting Grafana..."
 docker start grafana 2>/dev/null || docker run -d --name grafana \
   -p 3000:3000 \
   grafana/grafana:latest
+echo "Starting Postgres..."
+docker run -d --name postgres -e POSTGRES_PASSWORD=labpassword -e POSTGRES_DB=labdb -p 5432:5432 postgres:latest
+
 
 echo "All services started. Run ./run.sh in another terminal to start your app."
 docker ps
