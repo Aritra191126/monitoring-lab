@@ -16,4 +16,13 @@ groups:
         labels:
           severity: warning
         annotations: 
-          summary: "Redis has more than 20 connected clients"        
+          summary: "Redis has more than 20 connected clients" 
+  - name: postgres_alerts
+    rules:
+      - alert: PostgresHighConnections
+        expr: pg_stat_activity_count > 15
+        for: 15s
+        labels:
+          severity: warning
+        annotations:
+          summary: "Postgres connection count is unusually high"               

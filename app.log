@@ -1,0 +1,1753 @@
+INFO:     Will watch for changes in these directories: ['/workspaces/monitoring-lab']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [44596] using StatReload
+INFO:     Started server process [44615]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:05,896", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "a46f4dda5600e358c3146160c0104a4f"}
+INFO:     127.0.0.1:45800 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:05,909", "level": "INFO", "message": "Slow node encountered", "trace_id": "311e256a2ffda0b019cfe4a6c7ad56fb"}
+INFO:     127.0.0.1:45810 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:06,152", "level": "ERROR", "message": "flaky endpoint failed", "trace_id": "57522340d394dbaf3109a928a88e062f"}
+INFO:     127.0.0.1:45816 - "GET /flaky HTTP/1.1" 500 Internal Server Error
+{"timestamp": "2026-08-13 12:49:06,268", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "d9a5d7bbe5022e0802fe2222d50eb469"}
+INFO:     127.0.0.1:45822 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:06,283", "level": "INFO", "message": "Slow node encountered", "trace_id": "5a4a708a5bf453e13e9c560dd52e3f7c"}
+INFO:     127.0.0.1:45838 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:06,485", "level": "INFO", "message": "flaky endpoint succeeded", "trace_id": "1bb4da35dc3e25c6910b693dfd2ad046"}
+INFO:     127.0.0.1:45846 - "GET /flaky HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:06,609", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "aeb8df528aed8e2f6de9d7775485c25c"}
+INFO:     127.0.0.1:45854 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:06,629", "level": "INFO", "message": "Slow node encountered", "trace_id": "270c3282abab54ea6bee898938696f2e"}
+INFO:     127.0.0.1:45866 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:07,016", "level": "ERROR", "message": "flaky endpoint failed", "trace_id": "65b7d21fd7d369acb4b86adf5b0ab0f3"}
+INFO:     127.0.0.1:45872 - "GET /flaky HTTP/1.1" 500 Internal Server Error
+{"timestamp": "2026-08-13 12:49:07,133", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "8c7ba4c7ceb36d3188b79b23a81e0bd9"}
+INFO:     127.0.0.1:45878 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:07,149", "level": "INFO", "message": "Slow node encountered", "trace_id": "876b8ff1716733410ebebeab0dd0b977"}
+INFO:     127.0.0.1:45890 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:07,393", "level": "ERROR", "message": "flaky endpoint failed", "trace_id": "ebca1aa12e69bed5419be32139d4de39"}
+INFO:     127.0.0.1:45900 - "GET /flaky HTTP/1.1" 500 Internal Server Error
+{"timestamp": "2026-08-13 12:49:07,516", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "c62a66063bc7d50a14d2798fa99280cf"}
+INFO:     127.0.0.1:45910 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:07,539", "level": "INFO", "message": "Slow node encountered", "trace_id": "e8c1acf15bc7a96c2a06718a7dd68e8f"}
+INFO:     127.0.0.1:45924 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:07,968", "level": "ERROR", "message": "flaky endpoint failed", "trace_id": "99a4614d7af3a99f6ab01a8d79de34cd"}
+INFO:     127.0.0.1:45926 - "GET /flaky HTTP/1.1" 500 Internal Server Error
+{"timestamp": "2026-08-13 12:49:08,084", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "3afbd606d3bf7a07a6b2844edf5123cb"}
+INFO:     127.0.0.1:45930 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:08,098", "level": "INFO", "message": "Slow node encountered", "trace_id": "98666def22182a28207b549a0637bccf"}
+INFO:     127.0.0.1:45946 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:08,279", "level": "ERROR", "message": "flaky endpoint failed", "trace_id": "99d3d05c151b7f4dd8b32e0d59507813"}
+INFO:     127.0.0.1:45962 - "GET /flaky HTTP/1.1" 500 Internal Server Error
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:08,408", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "f32eb393443a791a3afb465fe7e67ea8"}
+INFO:     127.0.0.1:45976 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:08,432", "level": "INFO", "message": "Slow node encountered", "trace_id": "6aa60f3657976d6d6da9f42ed7d858c5"}
+INFO:     127.0.0.1:45986 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:08,632", "level": "ERROR", "message": "flaky endpoint failed", "trace_id": "672bcd60fbb91ff64994fae564c66c31"}
+INFO:     127.0.0.1:45994 - "GET /flaky HTTP/1.1" 500 Internal Server Error
+{"timestamp": "2026-08-13 12:49:08,744", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "952992f242641732eb5f806dded18d16"}
+INFO:     127.0.0.1:46000 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:08,757", "level": "INFO", "message": "Slow node encountered", "trace_id": "5ccd804b8a0487f3e623dc0d5c9b9ae8"}
+INFO:     127.0.0.1:46012 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:09,223", "level": "INFO", "message": "flaky endpoint succeeded", "trace_id": "ba12beb1f10a4b89ed5109060bfc588f"}
+INFO:     127.0.0.1:46024 - "GET /flaky HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:09,340", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "bcf78c4f3a204fc5a8373769bc7ff569"}
+INFO:     127.0.0.1:46040 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:09,363", "level": "INFO", "message": "Slow node encountered", "trace_id": "92956ae9010180c4f7224edf53fd3207"}
+INFO:     127.0.0.1:46046 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:09,612", "level": "INFO", "message": "flaky endpoint succeeded", "trace_id": "1485e7b8a3b183d18c00fa88d4e41b61"}
+INFO:     127.0.0.1:46056 - "GET /flaky HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:09,729", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "a62cce8e724155ed9e5bc6e81919dc34"}
+INFO:     127.0.0.1:46060 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:09,755", "level": "INFO", "message": "Slow node encountered", "trace_id": "0cb7a891bca6baa37c1664263fbcc925"}
+INFO:     127.0.0.1:46072 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:10,139", "level": "INFO", "message": "flaky endpoint succeeded", "trace_id": "27fd9af0c22d0cf313d28df43e1996f3"}
+INFO:     127.0.0.1:46080 - "GET /flaky HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:10,254", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "67174348c7265354c036c1bbd41f6d22"}
+INFO:     127.0.0.1:46084 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:10,269", "level": "INFO", "message": "Slow node encountered", "trace_id": "78eefb8abc0002f67b533a0efdeca02d"}
+INFO:     127.0.0.1:46094 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:10,679", "level": "ERROR", "message": "flaky endpoint failed", "trace_id": "8e351980d9d789fa5347b9836bfb345b"}
+INFO:     127.0.0.1:46104 - "GET /flaky HTTP/1.1" 500 Internal Server Error
+{"timestamp": "2026-08-13 12:49:10,795", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "d88fae76765f04b38522c2413c07fdd8"}
+INFO:     127.0.0.1:46108 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:10,804", "level": "INFO", "message": "Slow node encountered", "trace_id": "a6e54703ae3cc7b5d924abd4e5d23c96"}
+INFO:     127.0.0.1:46114 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:11,246", "level": "INFO", "message": "flaky endpoint succeeded", "trace_id": "9e15d67878fc52553d707009f6488741"}
+INFO:     127.0.0.1:46122 - "GET /flaky HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:11,362", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "78add476fbddd039975380bad0a3b101"}
+INFO:     127.0.0.1:46134 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:11,379", "level": "INFO", "message": "Slow node encountered", "trace_id": "5cb22bccd7203310e596cb8a59f12848"}
+INFO:     127.0.0.1:46148 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:11,586", "level": "INFO", "message": "flaky endpoint succeeded", "trace_id": "7f85a66a1f6e0670c1af7aac20d5b39c"}
+INFO:     127.0.0.1:46162 - "GET /flaky HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:11,720", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "fe0888a14daf5d3671e5348741678d3d"}
+INFO:     127.0.0.1:46166 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:11,775", "level": "INFO", "message": "Slow node encountered", "trace_id": "c08cb696033504a639ebfc1b69ed05ce"}
+INFO:     127.0.0.1:46174 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:12,230", "level": "INFO", "message": "flaky endpoint succeeded", "trace_id": "f375f024fb31d8296e154c452cd2257e"}
+INFO:     127.0.0.1:46188 - "GET /flaky HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:12,349", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "e9af1f43722a2f91e33da6f46a1afdc9"}
+INFO:     127.0.0.1:46204 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:12,363", "level": "INFO", "message": "Slow node encountered", "trace_id": "86fd95afe228d46eb97cec53585687d4"}
+INFO:     127.0.0.1:46218 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:12,781", "level": "ERROR", "message": "flaky endpoint failed", "trace_id": "3f2b36006410ebc96ad74e6b27f9b01d"}
+INFO:     127.0.0.1:46222 - "GET /flaky HTTP/1.1" 500 Internal Server Error
+{"timestamp": "2026-08-13 12:49:12,897", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "573475947b1d371861607a7c1336aaf7"}
+INFO:     127.0.0.1:46230 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:12,906", "level": "INFO", "message": "Slow node encountered", "trace_id": "b52adb2083c6da3bf68ef4bed5873d39"}
+INFO:     127.0.0.1:46244 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:13,093", "level": "INFO", "message": "flaky endpoint succeeded", "trace_id": "479da90686121520dc0beb97c4337305"}
+INFO:     127.0.0.1:46252 - "GET /flaky HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:13,211", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "66b43244d2b79c62eee434369f5e8c2c"}
+INFO:     127.0.0.1:46268 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:13,233", "level": "INFO", "message": "Slow node encountered", "trace_id": "a109661260fb30ace2dfcd0ce2321140"}
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46276 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:13,613", "level": "INFO", "message": "flaky endpoint succeeded", "trace_id": "06f32d9cc6af4d68754009a1ccb533c4"}
+INFO:     127.0.0.1:46282 - "GET /flaky HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:13,725", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "8fd5b9abf8b3d6197fb434a65a98e9cb"}
+INFO:     127.0.0.1:46290 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:13,736", "level": "INFO", "message": "Slow node encountered", "trace_id": "a3efb692384f71d82389904ed83ccfc8"}
+INFO:     127.0.0.1:46296 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:14,119", "level": "ERROR", "message": "flaky endpoint failed", "trace_id": "4e53158e1bb039b0e695e9496b66899c"}
+INFO:     127.0.0.1:46302 - "GET /flaky HTTP/1.1" 500 Internal Server Error
+{"timestamp": "2026-08-13 12:49:14,232", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "91bad80424fb063f0cec02329bade936"}
+INFO:     127.0.0.1:46314 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:14,242", "level": "INFO", "message": "Slow node encountered", "trace_id": "578f5606cdaca816a6d49cdfa0164c2c"}
+INFO:     127.0.0.1:46330 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:14,397", "level": "INFO", "message": "flaky endpoint succeeded", "trace_id": "e21f6456968912a9f4c096a35f366f06"}
+INFO:     127.0.0.1:46334 - "GET /flaky HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:14,526", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "6ae8905cf524c2962d36f8ae2a3251d1"}
+INFO:     127.0.0.1:46346 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:14,541", "level": "INFO", "message": "Slow node encountered", "trace_id": "9c2585385c9b4f06beb6e7993448a83e"}
+INFO:     127.0.0.1:46362 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:14,675", "level": "ERROR", "message": "flaky endpoint failed", "trace_id": "dc695dc87e35d9d36a2e2ec8123e24ec"}
+INFO:     127.0.0.1:46376 - "GET /flaky HTTP/1.1" 500 Internal Server Error
+{"timestamp": "2026-08-13 12:49:14,787", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "e71ac2aebeb2135f67c5031266a24fb9"}
+INFO:     127.0.0.1:46392 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:14,797", "level": "INFO", "message": "Slow node encountered", "trace_id": "9f27359d3c8968efef5b778a3612dbf1"}
+INFO:     127.0.0.1:46394 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:15,255", "level": "INFO", "message": "flaky endpoint succeeded", "trace_id": "4dc8509a36039ee3850c01d6a32db647"}
+INFO:     127.0.0.1:46404 - "GET /flaky HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:15,374", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "ae2a27bdffec9682410eae63f63c8350"}
+INFO:     127.0.0.1:46412 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:15,395", "level": "INFO", "message": "Slow node encountered", "trace_id": "d5c36eabb380a7657f38fab847ab432e"}
+INFO:     127.0.0.1:46428 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:15,514", "level": "INFO", "message": "flaky endpoint succeeded", "trace_id": "128daae897ac4c2fb71aff88f551de76"}
+INFO:     127.0.0.1:46438 - "GET /flaky HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:15,625", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "ab0613f5d78ed09c77927ecec88358ca"}
+INFO:     127.0.0.1:46448 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:15,635", "level": "INFO", "message": "Slow node encountered", "trace_id": "e796cb8015338fe5687c218bc2373515"}
+INFO:     127.0.0.1:46454 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:16,057", "level": "INFO", "message": "flaky endpoint succeeded", "trace_id": "46d7880c15a9ba6f5580057bbe34abec"}
+INFO:     127.0.0.1:39624 - "GET /flaky HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:16,208", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "3b8f2c2acc8a612d9fae4512d2a20ccd"}
+INFO:     127.0.0.1:39630 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:16,225", "level": "INFO", "message": "Slow node encountered", "trace_id": "7307210f3aad3016e1cdd0eaa3388525"}
+INFO:     127.0.0.1:39646 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:16,429", "level": "ERROR", "message": "flaky endpoint failed", "trace_id": "f876f1e2e4b612f33ecaed52dda7b672"}
+INFO:     127.0.0.1:39656 - "GET /flaky HTTP/1.1" 500 Internal Server Error
+{"timestamp": "2026-08-13 12:49:16,541", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "732cc52334c175b94b03cd28ef289ba5"}
+INFO:     127.0.0.1:39660 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:16,551", "level": "INFO", "message": "Slow node encountered", "trace_id": "a377063f76d06a6405ee01dd47642f29"}
+INFO:     127.0.0.1:39662 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:16,694", "level": "ERROR", "message": "flaky endpoint failed", "trace_id": "e439c13b8dc71637164884acde8c463b"}
+INFO:     127.0.0.1:39676 - "GET /flaky HTTP/1.1" 500 Internal Server Error
+{"timestamp": "2026-08-13 12:49:16,815", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "181a858faf01247063057e8ee2df581b"}
+INFO:     127.0.0.1:39682 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:16,840", "level": "INFO", "message": "Slow node encountered", "trace_id": "4106e08c3f39ece9089694e9833ccc0d"}
+INFO:     127.0.0.1:39684 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:17,291", "level": "INFO", "message": "flaky endpoint succeeded", "trace_id": "47d725d2cb2713560afb71ca28ef8226"}
+INFO:     127.0.0.1:39696 - "GET /flaky HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:17,404", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "014c949dd19fd2a84b3ea7c8ca376a84"}
+INFO:     127.0.0.1:39698 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:17,413", "level": "INFO", "message": "Slow node encountered", "trace_id": "bf0601962f402537d12cadb9d5f90d7c"}
+INFO:     127.0.0.1:39706 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:17,526", "level": "INFO", "message": "flaky endpoint succeeded", "trace_id": "af9d970b1b8d7b22154d389e06777607"}
+INFO:     127.0.0.1:39710 - "GET /flaky HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:17,641", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "11a97579e140b64f95a681c5f4b9354d"}
+INFO:     127.0.0.1:39716 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:17,656", "level": "INFO", "message": "Slow node encountered", "trace_id": "77c1107f385bf978c51dd70f4a046825"}
+INFO:     127.0.0.1:39726 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:17,923", "level": "ERROR", "message": "flaky endpoint failed", "trace_id": "1b2258f920a2531b06d3e6e7e0854d59"}
+INFO:     127.0.0.1:39736 - "GET /flaky HTTP/1.1" 500 Internal Server Error
+{"timestamp": "2026-08-13 12:49:18,038", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "a3bc1a9c4d1ea2efabbd8a6941eaca50"}
+INFO:     127.0.0.1:39744 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:18,057", "level": "INFO", "message": "Slow node encountered", "trace_id": "0229c6adef69dbbf7edff68889c00e12"}
+INFO:     127.0.0.1:39758 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:18,225", "level": "INFO", "message": "flaky endpoint succeeded", "trace_id": "2c23a2d0bc6a03aaa53244f6aaa0d711"}
+INFO:     127.0.0.1:39774 - "GET /flaky HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:18,339", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "e772719f5272b284af5b4dc7a85a1cd8"}
+INFO:     127.0.0.1:39784 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:18,348", "level": "INFO", "message": "Slow node encountered", "trace_id": "8bafbf3382ed1150b9e374e6d7b2fbd2"}
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39794 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:18,715", "level": "INFO", "message": "flaky endpoint succeeded", "trace_id": "8501f69758f084cbb5497aa4649a013f"}
+INFO:     127.0.0.1:39804 - "GET /flaky HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:18,827", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "382875a7033765a041f061ec6cc5b524"}
+INFO:     127.0.0.1:39810 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:18,841", "level": "INFO", "message": "Slow node encountered", "trace_id": "943edb09743eb851e8d1d50f0b1a632d"}
+INFO:     127.0.0.1:39818 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:19,348", "level": "ERROR", "message": "flaky endpoint failed", "trace_id": "f0dc9d389ec8c2d469fc213efadbccb2"}
+INFO:     127.0.0.1:39834 - "GET /flaky HTTP/1.1" 500 Internal Server Error
+{"timestamp": "2026-08-13 12:49:19,465", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "34f9de8ef12c3521add7651ccec3aa1c"}
+INFO:     127.0.0.1:39846 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:19,485", "level": "INFO", "message": "Slow node encountered", "trace_id": "9496a66f109ac9aa3b7b4b14c9ab1de5"}
+INFO:     127.0.0.1:39854 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:19,890", "level": "ERROR", "message": "flaky endpoint failed", "trace_id": "f4bbaf2ea938a795648423365c87ecc5"}
+INFO:     127.0.0.1:39868 - "GET /flaky HTTP/1.1" 500 Internal Server Error
+{"timestamp": "2026-08-13 12:49:20,006", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "2cb1372b75f906809bc73fb3391eb460"}
+INFO:     127.0.0.1:39870 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:20,016", "level": "INFO", "message": "Slow node encountered", "trace_id": "5989b195017279c9af7543c66511eb5c"}
+INFO:     127.0.0.1:39880 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:20,296", "level": "INFO", "message": "flaky endpoint succeeded", "trace_id": "530dd8c6448b59e5cac9f22731ee23e2"}
+INFO:     127.0.0.1:39894 - "GET /flaky HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:20,414", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "13670720e9bf127b540a971a144b61f6"}
+INFO:     127.0.0.1:39896 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:20,427", "level": "INFO", "message": "Slow node encountered", "trace_id": "89fb0c71e67e0b2ea46809c483b017f8"}
+INFO:     127.0.0.1:39912 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:20,738", "level": "INFO", "message": "flaky endpoint succeeded", "trace_id": "594c7d3d7fd3b045cd3b810ed93cb7d6"}
+INFO:     127.0.0.1:39920 - "GET /flaky HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:20,855", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "d22b8620a6826253d6200422de20a54f"}
+INFO:     127.0.0.1:39924 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:20,869", "level": "INFO", "message": "Slow node encountered", "trace_id": "6bd34cff164cf4847a6807e6eda7ca6b"}
+INFO:     127.0.0.1:39928 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:21,338", "level": "ERROR", "message": "flaky endpoint failed", "trace_id": "0ced107f1158923a3f06c4c1688c74fc"}
+INFO:     127.0.0.1:39940 - "GET /flaky HTTP/1.1" 500 Internal Server Error
+{"timestamp": "2026-08-13 12:49:21,452", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "5983189e18dfa331de999ccdefe65954"}
+INFO:     127.0.0.1:39956 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:21,463", "level": "INFO", "message": "Slow node encountered", "trace_id": "9e6063f1d0ad4234c5966c7fad0831c5"}
+INFO:     127.0.0.1:39972 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:21,613", "level": "ERROR", "message": "flaky endpoint failed", "trace_id": "97646db3d33f21ea4359f780523c6b7f"}
+INFO:     127.0.0.1:39988 - "GET /flaky HTTP/1.1" 500 Internal Server Error
+{"timestamp": "2026-08-13 12:49:21,726", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "9bd6884f66251a8b2fbd4cb75eec0156"}
+INFO:     127.0.0.1:39994 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:21,739", "level": "INFO", "message": "Slow node encountered", "trace_id": "426beef67df1ce042386d81a56dec51a"}
+INFO:     127.0.0.1:40006 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:22,094", "level": "INFO", "message": "flaky endpoint succeeded", "trace_id": "e86ff5e3a93a1fb57677d40c11c39f54"}
+INFO:     127.0.0.1:40020 - "GET /flaky HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:22,208", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "f17d167ab77a1601da7f05d06dcf4265"}
+INFO:     127.0.0.1:40032 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:22,218", "level": "INFO", "message": "Slow node encountered", "trace_id": "2fd6f0ef52c33d07046adec6fa846006"}
+INFO:     127.0.0.1:40048 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:22,405", "level": "ERROR", "message": "flaky endpoint failed", "trace_id": "f0152d8b92d399e954192f052c827019"}
+INFO:     127.0.0.1:40050 - "GET /flaky HTTP/1.1" 500 Internal Server Error
+{"timestamp": "2026-08-13 12:49:22,547", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "7dc9fa647423c04b813c3d1397dd3dec"}
+INFO:     127.0.0.1:40052 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:22,594", "level": "INFO", "message": "Slow node encountered", "trace_id": "af9e4b4bf5798e2291fc2e428266cb6e"}
+INFO:     127.0.0.1:40056 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:22,932", "level": "INFO", "message": "flaky endpoint succeeded", "trace_id": "d02a7d6d1d81974cd2ad1392e9ecc6c2"}
+INFO:     127.0.0.1:40060 - "GET /flaky HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:23,050", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "da9e3ed2a9754e97c1fee81fbd05707b"}
+INFO:     127.0.0.1:40074 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:23,072", "level": "INFO", "message": "Slow node encountered", "trace_id": "e4cbb68120187bc8c1cb0e903b617a29"}
+INFO:     127.0.0.1:40078 - "GET /slow HTTP/1.1" 200 OK
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:23,410", "level": "ERROR", "message": "flaky endpoint failed", "trace_id": "6c0192e5c5c15dfc3206265d8e853b73"}
+INFO:     127.0.0.1:40086 - "GET /flaky HTTP/1.1" 500 Internal Server Error
+{"timestamp": "2026-08-13 12:49:23,528", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "5444c02b28bf0e34bbd86f76875b7201"}
+INFO:     127.0.0.1:40094 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:23,545", "level": "INFO", "message": "Slow node encountered", "trace_id": "4a88c9ac94fded63531bc6249f48b844"}
+INFO:     127.0.0.1:40108 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:23,902", "level": "INFO", "message": "flaky endpoint succeeded", "trace_id": "b779575c4698aba18d6322dce8b46b81"}
+INFO:     127.0.0.1:40114 - "GET /flaky HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:24,027", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "140fb5ff5463b4a68420ba3507005bf4"}
+INFO:     127.0.0.1:40130 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:24,053", "level": "INFO", "message": "Slow node encountered", "trace_id": "64d530dfd488ac28d0ad2d939df86d9d"}
+INFO:     127.0.0.1:40134 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:24,283", "level": "ERROR", "message": "flaky endpoint failed", "trace_id": "9b1e2f6d5c9008b7ff80e53f9d6e4ae1"}
+INFO:     127.0.0.1:40140 - "GET /flaky HTTP/1.1" 500 Internal Server Error
+{"timestamp": "2026-08-13 12:49:24,398", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "08147cb383d0a504d9c930e2da0f2dce"}
+INFO:     127.0.0.1:40142 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:24,415", "level": "INFO", "message": "Slow node encountered", "trace_id": "b816a307328db7aaeb3e7415848ad836"}
+INFO:     127.0.0.1:40158 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:24,752", "level": "INFO", "message": "flaky endpoint succeeded", "trace_id": "ce6e69cb5dd412930c0fe37bda773e1b"}
+INFO:     127.0.0.1:40170 - "GET /flaky HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:24,878", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "9e994667f106e0ff858104046ec62213"}
+INFO:     127.0.0.1:40176 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:24,892", "level": "INFO", "message": "Slow node encountered", "trace_id": "8925f23abe6f44826d2a57d36eb90b36"}
+INFO:     127.0.0.1:40188 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:25,242", "level": "ERROR", "message": "flaky endpoint failed", "trace_id": "c3c6fb5f37a28a8ab91ff52ccce1f43e"}
+INFO:     127.0.0.1:40190 - "GET /flaky HTTP/1.1" 500 Internal Server Error
+{"timestamp": "2026-08-13 12:49:25,358", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "4658c4a42f143af4bc039d519df7a548"}
+INFO:     127.0.0.1:40198 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:25,374", "level": "INFO", "message": "Slow node encountered", "trace_id": "bdbb46d544fba33027a6ae8417144ecc"}
+INFO:     127.0.0.1:40200 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:25,631", "level": "ERROR", "message": "flaky endpoint failed", "trace_id": "ce93ab002e3659d5e12389db66406d80"}
+INFO:     127.0.0.1:40210 - "GET /flaky HTTP/1.1" 500 Internal Server Error
+{"timestamp": "2026-08-13 12:49:25,748", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "78eccb9042b2d9901684c2dd4190b328"}
+INFO:     127.0.0.1:40220 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:25,789", "level": "INFO", "message": "Slow node encountered", "trace_id": "9d66191db26a03c003fe73e72e86275e"}
+INFO:     127.0.0.1:40222 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:26,187", "level": "ERROR", "message": "flaky endpoint failed", "trace_id": "a2cc91f24884f3231f475f676f591321"}
+INFO:     127.0.0.1:59804 - "GET /flaky HTTP/1.1" 500 Internal Server Error
+{"timestamp": "2026-08-13 12:49:26,300", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "05279b78120b8a6541ff1ad8ff2ec6af"}
+INFO:     127.0.0.1:59818 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:26,310", "level": "INFO", "message": "Slow node encountered", "trace_id": "09cda6108b545641c6a38fed563a5be3"}
+INFO:     127.0.0.1:59830 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:26,822", "level": "INFO", "message": "flaky endpoint succeeded", "trace_id": "8a3b3d018a505f4e7963807f8084a3d4"}
+INFO:     127.0.0.1:59838 - "GET /flaky HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:26,937", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "7ae8727ecfade39e98588934c3b8da90"}
+INFO:     127.0.0.1:59854 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:26,950", "level": "INFO", "message": "Slow node encountered", "trace_id": "37b57ee4c4c72dd118f25f0ab60ce39b"}
+INFO:     127.0.0.1:59868 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:27,387", "level": "ERROR", "message": "flaky endpoint failed", "trace_id": "fbb19e88e1340c97ed9b7ba05292dcdf"}
+INFO:     127.0.0.1:59874 - "GET /flaky HTTP/1.1" 500 Internal Server Error
+{"timestamp": "2026-08-13 12:49:27,500", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "198ec83a7e003282cf474b1da26bd6f3"}
+INFO:     127.0.0.1:59890 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:27,510", "level": "INFO", "message": "Slow node encountered", "trace_id": "1c8e75deed029b4daaddc5f967fd3d9d"}
+INFO:     127.0.0.1:59896 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:27,650", "level": "INFO", "message": "flaky endpoint succeeded", "trace_id": "bacd67dab5a19e446d83282b88be870b"}
+INFO:     127.0.0.1:59906 - "GET /flaky HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:27,771", "level": "INFO", "message": "Fast endpoint triggered", "trace_id": "19b7f4747cecf7f57f0bec43f9ca9aae"}
+INFO:     127.0.0.1:59914 - "GET /fast HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:27,793", "level": "INFO", "message": "Slow node encountered", "trace_id": "515a5b2dcf7ae19228255b4ca396e169"}
+INFO:     127.0.0.1:59922 - "GET /slow HTTP/1.1" 200 OK
+{"timestamp": "2026-08-13 12:49:28,007", "level": "INFO", "message": "flaky endpoint succeeded", "trace_id": "5ea0c13dabe70dc69c05ad26d5ed9f47"}
+INFO:     127.0.0.1:59934 - "GET /flaky HTTP/1.1" 200 OK
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+{
+    "resource_metrics": [
+        {
+            "resource": {
+                "attributes": {
+                    "telemetry.sdk.language": "python",
+                    "telemetry.sdk.name": "opentelemetry",
+                    "telemetry.sdk.version": "1.44.0",
+                    "service.instance.id": "5d9224a3-a943-4958-88f4-36bd38bf65cd",
+                    "service.name": "monitoring-lab",
+                    "telemetry.auto.version": "0.65b0"
+                },
+                "schema_url": ""
+            },
+            "scope_metrics": [
+                {
+                    "scope": {
+                        "name": "opentelemetry.instrumentation.fastapi",
+                        "version": "0.65b0",
+                        "schema_url": "https://opentelemetry.io/schemas/1.11.0",
+                        "attributes": null
+                    },
+                    "metrics": [
+                        {
+                            "name": "http.server.active_requests",
+                            "description": "Number of active HTTP server requests.",
+                            "unit": "{request}",
+                            "data": {
+                                "data_points": [
+                                    {
+                                        "attributes": {
+                                            "http.scheme": "http",
+                                            "http.host": "172.17.0.1:8000",
+                                            "http.flavor": "1.1",
+                                            "http.method": "GET",
+                                            "http.server_name": "172.17.0.1:8000"
+                                        },
+                                        "start_time_unix_nano": 1786625343389691893,
+                                        "time_unix_nano": 1786625399297534108,
+                                        "value": 0,
+                                        "exemplars": []
+                                    },
+                                    {
+                                        "attributes": {
+                                            "http.scheme": "http",
+                                            "http.host": "127.0.0.1:8000",
+                                            "http.flavor": "1.1",
+                                            "http.method": "GET",
+                                            "http.server_name": "localhost:8000"
+                                        },
+                                        "start_time_unix_nano": 1786625345895524987,
+                                        "time_unix_nano": 1786625399297534108,
+                                        "value": 0,
+                                        "exemplars": []
+                                    }
+                                ],
+                                "aggregation_temporality": 2,
+                                "is_monotonic": false
+                            }
+                        },
+                        {
+                            "name": "http.server.duration",
+                            "description": "Measures the duration of inbound HTTP requests.",
+                            "unit": "ms",
+                            "data": {
+                                "data_points": [
+                                    {
+                                        "attributes": {
+                                            "http.scheme": "http",
+                                            "http.host": "172.17.0.1:8000",
+                                            "net.host.port": 8000,
+                                            "http.flavor": "1.1",
+                                            "http.method": "GET",
+                                            "http.server_name": "172.17.0.1:8000",
+                                            "http.status_code": 200,
+                                            "http.target": "/metrics"
+                                        },
+                                        "start_time_unix_nano": 1786625343397325920,
+                                        "time_unix_nano": 1786625399297534108,
+                                        "count": 12,
+                                        "sum": 66,
+                                        "bucket_counts": [
+                                            0,
+                                            8,
+                                            4,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "explicit_bounds": [
+                                            0.0,
+                                            5.0,
+                                            10.0,
+                                            25.0,
+                                            50.0,
+                                            75.0,
+                                            100.0,
+                                            250.0,
+                                            500.0,
+                                            750.0,
+                                            1000.0,
+                                            2500.0,
+                                            5000.0,
+                                            7500.0,
+                                            10000.0
+                                        ],
+                                        "min": 3,
+                                        "max": 10,
+                                        "exemplars": [
+                                            {
+                                                "filtered_attributes": {},
+                                                "value": 3,
+                                                "time_unix_nano": 1786625398391853934,
+                                                "span_id": 5964452972348656109,
+                                                "trace_id": 169152224214605912656861512633527379946
+                                            },
+                                            {
+                                                "filtered_attributes": {},
+                                                "value": 10,
+                                                "time_unix_nano": 1786625383399490570,
+                                                "span_id": 5919804128347369077,
+                                                "trace_id": 40161099326207553548376030075822426088
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributes": {
+                                            "http.scheme": "http",
+                                            "http.host": "127.0.0.1:8000",
+                                            "net.host.port": 8000,
+                                            "http.flavor": "1.1",
+                                            "http.method": "GET",
+                                            "http.server_name": "localhost:8000",
+                                            "http.status_code": 200,
+                                            "http.target": "/fast"
+                                        },
+                                        "start_time_unix_nano": 1786625345898320327,
+                                        "time_unix_nano": 1786625399297534108,
+                                        "count": 50,
+                                        "sum": 160,
+                                        "bucket_counts": [
+                                            0,
+                                            47,
+                                            2,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "explicit_bounds": [
+                                            0.0,
+                                            5.0,
+                                            10.0,
+                                            25.0,
+                                            50.0,
+                                            75.0,
+                                            100.0,
+                                            250.0,
+                                            500.0,
+                                            750.0,
+                                            1000.0,
+                                            2500.0,
+                                            5000.0,
+                                            7500.0,
+                                            10000.0
+                                        ],
+                                        "min": 2,
+                                        "max": 19,
+                                        "exemplars": [
+                                            {
+                                                "filtered_attributes": {},
+                                                "value": 5,
+                                                "time_unix_nano": 1786625367774133288,
+                                                "span_id": 11102837739588018622,
+                                                "trace_id": 34185848356807531605266939628237789870
+                                            },
+                                            {
+                                                "filtered_attributes": {},
+                                                "value": 9,
+                                                "time_unix_nano": 1786625364034184070,
+                                                "span_id": 13968060733262851399,
+                                                "trace_id": 26666135714013319541039000639011576820
+                                            },
+                                            {
+                                                "filtered_attributes": {},
+                                                "value": 19,
+                                                "time_unix_nano": 1786625351734900403,
+                                                "span_id": 8382842688454057317,
+                                                "trace_id": 337668220491719519721421487574769700157
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributes": {
+                                            "http.scheme": "http",
+                                            "http.host": "127.0.0.1:8000",
+                                            "net.host.port": 8000,
+                                            "http.flavor": "1.1",
+                                            "http.method": "GET",
+                                            "http.server_name": "localhost:8000",
+                                            "http.status_code": 200,
+                                            "http.target": "/slow"
+                                        },
+                                        "start_time_unix_nano": 1786625346125470319,
+                                        "time_unix_nano": 1786625399297534108,
+                                        "count": 50,
+                                        "sum": 14761,
+                                        "bucket_counts": [
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            21,
+                                            28,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "explicit_bounds": [
+                                            0.0,
+                                            5.0,
+                                            10.0,
+                                            25.0,
+                                            50.0,
+                                            75.0,
+                                            100.0,
+                                            250.0,
+                                            500.0,
+                                            750.0,
+                                            1000.0,
+                                            2500.0,
+                                            5000.0,
+                                            7500.0,
+                                            10000.0
+                                        ],
+                                        "min": 103,
+                                        "max": 502,
+                                        "exemplars": [
+                                            {
+                                                "filtered_attributes": {},
+                                                "value": 206,
+                                                "time_unix_nano": 1786625367998374398,
+                                                "span_id": 15929385047077012943,
+                                                "trace_id": 108136623704599516847267400599169589609
+                                            },
+                                            {
+                                                "filtered_attributes": {},
+                                                "value": 422,
+                                                "time_unix_nano": 1786625367371595326,
+                                                "span_id": 1700937773919659916,
+                                                "trace_id": 74049919208096144699961585748727882651
+                                            },
+                                            {
+                                                "filtered_attributes": {},
+                                                "value": 502,
+                                                "time_unix_nano": 1786625366812045852,
+                                                "span_id": 11921968006736872402,
+                                                "trace_id": 13030841008829062396386719304689277923
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributes": {
+                                            "http.scheme": "http",
+                                            "http.host": "127.0.0.1:8000",
+                                            "net.host.port": 8000,
+                                            "http.flavor": "1.1",
+                                            "http.method": "GET",
+                                            "http.server_name": "localhost:8000",
+                                            "http.status_code": 500,
+                                            "http.target": "/flaky"
+                                        },
+                                        "start_time_unix_nano": 1786625346154951779,
+                                        "time_unix_nano": 1786625399297534108,
+                                        "count": 24,
+                                        "sum": 68,
+                                        "bucket_counts": [
+                                            0,
+                                            23,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "explicit_bounds": [
+                                            0.0,
+                                            5.0,
+                                            10.0,
+                                            25.0,
+                                            50.0,
+                                            75.0,
+                                            100.0,
+                                            250.0,
+                                            500.0,
+                                            750.0,
+                                            1000.0,
+                                            2500.0,
+                                            5000.0,
+                                            7500.0,
+                                            10000.0
+                                        ],
+                                        "min": 2,
+                                        "max": 7,
+                                        "exemplars": [
+                                            {
+                                                "filtered_attributes": {},
+                                                "value": 3,
+                                                "time_unix_nano": 1786625367388626989,
+                                                "span_id": 17653490415942618282,
+                                                "trace_id": 334558478951419078316382531451253611743
+                                            },
+                                            {
+                                                "filtered_attributes": {},
+                                                "value": 7,
+                                                "time_unix_nano": 1786625356700603729,
+                                                "span_id": 16892818634014311442,
+                                                "trace_id": 303363863183290464842034180100616635963
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributes": {
+                                            "http.scheme": "http",
+                                            "http.host": "127.0.0.1:8000",
+                                            "net.host.port": 8000,
+                                            "http.flavor": "1.1",
+                                            "http.method": "GET",
+                                            "http.server_name": "localhost:8000",
+                                            "http.status_code": 200,
+                                            "http.target": "/flaky"
+                                        },
+                                        "start_time_unix_nano": 1786625346486162067,
+                                        "time_unix_nano": 1786625399297534108,
+                                        "count": 26,
+                                        "sum": 66,
+                                        "bucket_counts": [
+                                            0,
+                                            26,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "explicit_bounds": [
+                                            0.0,
+                                            5.0,
+                                            10.0,
+                                            25.0,
+                                            50.0,
+                                            75.0,
+                                            100.0,
+                                            250.0,
+                                            500.0,
+                                            750.0,
+                                            1000.0,
+                                            2500.0,
+                                            5000.0,
+                                            7500.0,
+                                            10000.0
+                                        ],
+                                        "min": 2,
+                                        "max": 4,
+                                        "exemplars": [
+                                            {
+                                                "filtered_attributes": {},
+                                                "value": 3,
+                                                "time_unix_nano": 1786625368009805360,
+                                                "span_id": 14689311757679906392,
+                                                "trace_id": 125782118492320346214282330522990255943
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "aggregation_temporality": 2
+                            }
+                        },
+                        {
+                            "name": "http.server.response.size",
+                            "description": "measures the size of HTTP response messages (compressed).",
+                            "unit": "By",
+                            "data": {
+                                "data_points": [
+                                    {
+                                        "attributes": {
+                                            "http.scheme": "http",
+                                            "http.host": "172.17.0.1:8000",
+                                            "net.host.port": 8000,
+                                            "http.flavor": "1.1",
+                                            "http.method": "GET",
+                                            "http.server_name": "172.17.0.1:8000",
+                                            "http.status_code": 200,
+                                            "http.target": "/metrics"
+                                        },
+                                        "start_time_unix_nano": 1786625343397469127,
+                                        "time_unix_nano": 1786625399297534108,
+                                        "count": 12,
+                                        "sum": 111717,
+                                        "bucket_counts": [
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1,
+                                            0,
+                                            11,
+                                            0
+                                        ],
+                                        "explicit_bounds": [
+                                            0.0,
+                                            5.0,
+                                            10.0,
+                                            25.0,
+                                            50.0,
+                                            75.0,
+                                            100.0,
+                                            250.0,
+                                            500.0,
+                                            750.0,
+                                            1000.0,
+                                            2500.0,
+                                            5000.0,
+                                            7500.0,
+                                            10000.0
+                                        ],
+                                        "min": 4431,
+                                        "max": 9770,
+                                        "exemplars": [
+                                            {
+                                                "filtered_attributes": {},
+                                                "value": 4431,
+                                                "time_unix_nano": 1786625343397437859,
+                                                "span_id": 2917760045273572015,
+                                                "trace_id": 134632541274915864492381224267001563376
+                                            },
+                                            {
+                                                "filtered_attributes": {},
+                                                "value": 9770,
+                                                "time_unix_nano": 1786625398391896964,
+                                                "span_id": 5964452972348656109,
+                                                "trace_id": 169152224214605912656861512633527379946
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributes": {
+                                            "http.scheme": "http",
+                                            "http.host": "127.0.0.1:8000",
+                                            "net.host.port": 8000,
+                                            "http.flavor": "1.1",
+                                            "http.method": "GET",
+                                            "http.server_name": "localhost:8000",
+                                            "http.status_code": 200,
+                                            "http.target": "/fast"
+                                        },
+                                        "start_time_unix_nano": 1786625345898801375,
+                                        "time_unix_nano": 1786625399297534108,
+                                        "count": 50,
+                                        "sum": 750,
+                                        "bucket_counts": [
+                                            0,
+                                            0,
+                                            0,
+                                            50,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "explicit_bounds": [
+                                            0.0,
+                                            5.0,
+                                            10.0,
+                                            25.0,
+                                            50.0,
+                                            75.0,
+                                            100.0,
+                                            250.0,
+                                            500.0,
+                                            750.0,
+                                            1000.0,
+                                            2500.0,
+                                            5000.0,
+                                            7500.0,
+                                            10000.0
+                                        ],
+                                        "min": 15,
+                                        "max": 15,
+                                        "exemplars": [
+                                            {
+                                                "filtered_attributes": {},
+                                                "value": 15,
+                                                "time_unix_nano": 1786625367774182119,
+                                                "span_id": 11102837739588018622,
+                                                "trace_id": 34185848356807531605266939628237789870
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributes": {
+                                            "http.scheme": "http",
+                                            "http.host": "127.0.0.1:8000",
+                                            "net.host.port": 8000,
+                                            "http.flavor": "1.1",
+                                            "http.method": "GET",
+                                            "http.server_name": "localhost:8000",
+                                            "http.status_code": 200,
+                                            "http.target": "/slow"
+                                        },
+                                        "start_time_unix_nano": 1786625346125571247,
+                                        "time_unix_nano": 1786625399297534108,
+                                        "count": 50,
+                                        "sum": 200,
+                                        "bucket_counts": [
+                                            0,
+                                            50,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "explicit_bounds": [
+                                            0.0,
+                                            5.0,
+                                            10.0,
+                                            25.0,
+                                            50.0,
+                                            75.0,
+                                            100.0,
+                                            250.0,
+                                            500.0,
+                                            750.0,
+                                            1000.0,
+                                            2500.0,
+                                            5000.0,
+                                            7500.0,
+                                            10000.0
+                                        ],
+                                        "min": 4,
+                                        "max": 4,
+                                        "exemplars": [
+                                            {
+                                                "filtered_attributes": {},
+                                                "value": 4,
+                                                "time_unix_nano": 1786625367998420033,
+                                                "span_id": 15929385047077012943,
+                                                "trace_id": 108136623704599516847267400599169589609
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributes": {
+                                            "http.scheme": "http",
+                                            "http.host": "127.0.0.1:8000",
+                                            "net.host.port": 8000,
+                                            "http.flavor": "1.1",
+                                            "http.method": "GET",
+                                            "http.server_name": "localhost:8000",
+                                            "http.status_code": 500,
+                                            "http.target": "/flaky"
+                                        },
+                                        "start_time_unix_nano": 1786625346155028191,
+                                        "time_unix_nano": 1786625399297534108,
+                                        "count": 24,
+                                        "sum": 648,
+                                        "bucket_counts": [
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            24,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "explicit_bounds": [
+                                            0.0,
+                                            5.0,
+                                            10.0,
+                                            25.0,
+                                            50.0,
+                                            75.0,
+                                            100.0,
+                                            250.0,
+                                            500.0,
+                                            750.0,
+                                            1000.0,
+                                            2500.0,
+                                            5000.0,
+                                            7500.0,
+                                            10000.0
+                                        ],
+                                        "min": 27,
+                                        "max": 27,
+                                        "exemplars": [
+                                            {
+                                                "filtered_attributes": {},
+                                                "value": 27,
+                                                "time_unix_nano": 1786625367388679406,
+                                                "span_id": 17653490415942618282,
+                                                "trace_id": 334558478951419078316382531451253611743
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributes": {
+                                            "http.scheme": "http",
+                                            "http.host": "127.0.0.1:8000",
+                                            "net.host.port": 8000,
+                                            "http.flavor": "1.1",
+                                            "http.method": "GET",
+                                            "http.server_name": "localhost:8000",
+                                            "http.status_code": 200,
+                                            "http.target": "/flaky"
+                                        },
+                                        "start_time_unix_nano": 1786625346486236867,
+                                        "time_unix_nano": 1786625399297534108,
+                                        "count": 26,
+                                        "sum": 390,
+                                        "bucket_counts": [
+                                            0,
+                                            0,
+                                            0,
+                                            26,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "explicit_bounds": [
+                                            0.0,
+                                            5.0,
+                                            10.0,
+                                            25.0,
+                                            50.0,
+                                            75.0,
+                                            100.0,
+                                            250.0,
+                                            500.0,
+                                            750.0,
+                                            1000.0,
+                                            2500.0,
+                                            5000.0,
+                                            7500.0,
+                                            10000.0
+                                        ],
+                                        "min": 15,
+                                        "max": 15,
+                                        "exemplars": [
+                                            {
+                                                "filtered_attributes": {},
+                                                "value": 15,
+                                                "time_unix_nano": 1786625368009848411,
+                                                "span_id": 14689311757679906392,
+                                                "trace_id": 125782118492320346214282330522990255943
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "aggregation_temporality": 2
+                            }
+                        }
+                    ],
+                    "schema_url": "https://opentelemetry.io/schemas/1.11.0"
+                }
+            ],
+            "schema_url": ""
+        }
+    ]
+}
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+{
+    "resource_metrics": [
+        {
+            "resource": {
+                "attributes": {
+                    "telemetry.sdk.language": "python",
+                    "telemetry.sdk.name": "opentelemetry",
+                    "telemetry.sdk.version": "1.44.0",
+                    "service.instance.id": "5d9224a3-a943-4958-88f4-36bd38bf65cd",
+                    "service.name": "monitoring-lab",
+                    "telemetry.auto.version": "0.65b0"
+                },
+                "schema_url": ""
+            },
+            "scope_metrics": [
+                {
+                    "scope": {
+                        "name": "opentelemetry.instrumentation.fastapi",
+                        "version": "0.65b0",
+                        "schema_url": "https://opentelemetry.io/schemas/1.11.0",
+                        "attributes": null
+                    },
+                    "metrics": [
+                        {
+                            "name": "http.server.active_requests",
+                            "description": "Number of active HTTP server requests.",
+                            "unit": "{request}",
+                            "data": {
+                                "data_points": [
+                                    {
+                                        "attributes": {
+                                            "http.scheme": "http",
+                                            "http.host": "172.17.0.1:8000",
+                                            "http.flavor": "1.1",
+                                            "http.method": "GET",
+                                            "http.server_name": "172.17.0.1:8000"
+                                        },
+                                        "start_time_unix_nano": 1786625343389691893,
+                                        "time_unix_nano": 1786625459310433276,
+                                        "value": 0,
+                                        "exemplars": []
+                                    },
+                                    {
+                                        "attributes": {
+                                            "http.scheme": "http",
+                                            "http.host": "127.0.0.1:8000",
+                                            "http.flavor": "1.1",
+                                            "http.method": "GET",
+                                            "http.server_name": "localhost:8000"
+                                        },
+                                        "start_time_unix_nano": 1786625345895524987,
+                                        "time_unix_nano": 1786625459310433276,
+                                        "value": 0,
+                                        "exemplars": []
+                                    }
+                                ],
+                                "aggregation_temporality": 2,
+                                "is_monotonic": false
+                            }
+                        },
+                        {
+                            "name": "http.server.duration",
+                            "description": "Measures the duration of inbound HTTP requests.",
+                            "unit": "ms",
+                            "data": {
+                                "data_points": [
+                                    {
+                                        "attributes": {
+                                            "http.scheme": "http",
+                                            "http.host": "172.17.0.1:8000",
+                                            "net.host.port": 8000,
+                                            "http.flavor": "1.1",
+                                            "http.method": "GET",
+                                            "http.server_name": "172.17.0.1:8000",
+                                            "http.status_code": 200,
+                                            "http.target": "/metrics"
+                                        },
+                                        "start_time_unix_nano": 1786625343397325920,
+                                        "time_unix_nano": 1786625459310433276,
+                                        "count": 24,
+                                        "sum": 128,
+                                        "bucket_counts": [
+                                            0,
+                                            17,
+                                            6,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "explicit_bounds": [
+                                            0.0,
+                                            5.0,
+                                            10.0,
+                                            25.0,
+                                            50.0,
+                                            75.0,
+                                            100.0,
+                                            250.0,
+                                            500.0,
+                                            750.0,
+                                            1000.0,
+                                            2500.0,
+                                            5000.0,
+                                            7500.0,
+                                            10000.0
+                                        ],
+                                        "min": 3,
+                                        "max": 15,
+                                        "exemplars": [
+                                            {
+                                                "filtered_attributes": {},
+                                                "value": 5,
+                                                "time_unix_nano": 1786625458394648864,
+                                                "span_id": 12348993167804377514,
+                                                "trace_id": 151129104020848573707975377949952016372
+                                            },
+                                            {
+                                                "filtered_attributes": {},
+                                                "value": 6,
+                                                "time_unix_nano": 1786625433393872944,
+                                                "span_id": 1791638457087561116,
+                                                "trace_id": 260064470248470240074507013128971776231
+                                            },
+                                            {
+                                                "filtered_attributes": {},
+                                                "value": 15,
+                                                "time_unix_nano": 1786625448404246182,
+                                                "span_id": 14924365352838874946,
+                                                "trace_id": 324388675789799431821743023588456052653
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributes": {
+                                            "http.scheme": "http",
+                                            "http.host": "127.0.0.1:8000",
+                                            "net.host.port": 8000,
+                                            "http.flavor": "1.1",
+                                            "http.method": "GET",
+                                            "http.server_name": "localhost:8000",
+                                            "http.status_code": 200,
+                                            "http.target": "/fast"
+                                        },
+                                        "start_time_unix_nano": 1786625345898320327,
+                                        "time_unix_nano": 1786625459310433276,
+                                        "count": 50,
+                                        "sum": 160,
+                                        "bucket_counts": [
+                                            0,
+                                            47,
+                                            2,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "explicit_bounds": [
+                                            0.0,
+                                            5.0,
+                                            10.0,
+                                            25.0,
+                                            50.0,
+                                            75.0,
+                                            100.0,
+                                            250.0,
+                                            500.0,
+                                            750.0,
+                                            1000.0,
+                                            2500.0,
+                                            5000.0,
+                                            7500.0,
+                                            10000.0
+                                        ],
+                                        "min": 2,
+                                        "max": 19,
+                                        "exemplars": []
+                                    },
+                                    {
+                                        "attributes": {
+                                            "http.scheme": "http",
+                                            "http.host": "127.0.0.1:8000",
+                                            "net.host.port": 8000,
+                                            "http.flavor": "1.1",
+                                            "http.method": "GET",
+                                            "http.server_name": "localhost:8000",
+                                            "http.status_code": 200,
+                                            "http.target": "/slow"
+                                        },
+                                        "start_time_unix_nano": 1786625346125470319,
+                                        "time_unix_nano": 1786625459310433276,
+                                        "count": 50,
+                                        "sum": 14761,
+                                        "bucket_counts": [
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            21,
+                                            28,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "explicit_bounds": [
+                                            0.0,
+                                            5.0,
+                                            10.0,
+                                            25.0,
+                                            50.0,
+                                            75.0,
+                                            100.0,
+                                            250.0,
+                                            500.0,
+                                            750.0,
+                                            1000.0,
+                                            2500.0,
+                                            5000.0,
+                                            7500.0,
+                                            10000.0
+                                        ],
+                                        "min": 103,
+                                        "max": 502,
+                                        "exemplars": []
+                                    },
+                                    {
+                                        "attributes": {
+                                            "http.scheme": "http",
+                                            "http.host": "127.0.0.1:8000",
+                                            "net.host.port": 8000,
+                                            "http.flavor": "1.1",
+                                            "http.method": "GET",
+                                            "http.server_name": "localhost:8000",
+                                            "http.status_code": 500,
+                                            "http.target": "/flaky"
+                                        },
+                                        "start_time_unix_nano": 1786625346154951779,
+                                        "time_unix_nano": 1786625459310433276,
+                                        "count": 24,
+                                        "sum": 68,
+                                        "bucket_counts": [
+                                            0,
+                                            23,
+                                            1,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "explicit_bounds": [
+                                            0.0,
+                                            5.0,
+                                            10.0,
+                                            25.0,
+                                            50.0,
+                                            75.0,
+                                            100.0,
+                                            250.0,
+                                            500.0,
+                                            750.0,
+                                            1000.0,
+                                            2500.0,
+                                            5000.0,
+                                            7500.0,
+                                            10000.0
+                                        ],
+                                        "min": 2,
+                                        "max": 7,
+                                        "exemplars": []
+                                    },
+                                    {
+                                        "attributes": {
+                                            "http.scheme": "http",
+                                            "http.host": "127.0.0.1:8000",
+                                            "net.host.port": 8000,
+                                            "http.flavor": "1.1",
+                                            "http.method": "GET",
+                                            "http.server_name": "localhost:8000",
+                                            "http.status_code": 200,
+                                            "http.target": "/flaky"
+                                        },
+                                        "start_time_unix_nano": 1786625346486162067,
+                                        "time_unix_nano": 1786625459310433276,
+                                        "count": 26,
+                                        "sum": 66,
+                                        "bucket_counts": [
+                                            0,
+                                            26,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "explicit_bounds": [
+                                            0.0,
+                                            5.0,
+                                            10.0,
+                                            25.0,
+                                            50.0,
+                                            75.0,
+                                            100.0,
+                                            250.0,
+                                            500.0,
+                                            750.0,
+                                            1000.0,
+                                            2500.0,
+                                            5000.0,
+                                            7500.0,
+                                            10000.0
+                                        ],
+                                        "min": 2,
+                                        "max": 4,
+                                        "exemplars": []
+                                    }
+                                ],
+                                "aggregation_temporality": 2
+                            }
+                        },
+                        {
+                            "name": "http.server.response.size",
+                            "description": "measures the size of HTTP response messages (compressed).",
+                            "unit": "By",
+                            "data": {
+                                "data_points": [
+                                    {
+                                        "attributes": {
+                                            "http.scheme": "http",
+                                            "http.host": "172.17.0.1:8000",
+                                            "net.host.port": 8000,
+                                            "http.flavor": "1.1",
+                                            "http.method": "GET",
+                                            "http.server_name": "172.17.0.1:8000",
+                                            "http.status_code": 200,
+                                            "http.target": "/metrics"
+                                        },
+                                        "start_time_unix_nano": 1786625343397469127,
+                                        "time_unix_nano": 1786625459310433276,
+                                        "count": 24,
+                                        "sum": 229008,
+                                        "bucket_counts": [
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            1,
+                                            0,
+                                            23,
+                                            0
+                                        ],
+                                        "explicit_bounds": [
+                                            0.0,
+                                            5.0,
+                                            10.0,
+                                            25.0,
+                                            50.0,
+                                            75.0,
+                                            100.0,
+                                            250.0,
+                                            500.0,
+                                            750.0,
+                                            1000.0,
+                                            2500.0,
+                                            5000.0,
+                                            7500.0,
+                                            10000.0
+                                        ],
+                                        "min": 4431,
+                                        "max": 9784,
+                                        "exemplars": [
+                                            {
+                                                "filtered_attributes": {},
+                                                "value": 9770,
+                                                "time_unix_nano": 1786625458394707112,
+                                                "span_id": 12348993167804377514,
+                                                "trace_id": 151129104020848573707975377949952016372
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "attributes": {
+                                            "http.scheme": "http",
+                                            "http.host": "127.0.0.1:8000",
+                                            "net.host.port": 8000,
+                                            "http.flavor": "1.1",
+                                            "http.method": "GET",
+                                            "http.server_name": "localhost:8000",
+                                            "http.status_code": 200,
+                                            "http.target": "/fast"
+                                        },
+                                        "start_time_unix_nano": 1786625345898801375,
+                                        "time_unix_nano": 1786625459310433276,
+                                        "count": 50,
+                                        "sum": 750,
+                                        "bucket_counts": [
+                                            0,
+                                            0,
+                                            0,
+                                            50,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "explicit_bounds": [
+                                            0.0,
+                                            5.0,
+                                            10.0,
+                                            25.0,
+                                            50.0,
+                                            75.0,
+                                            100.0,
+                                            250.0,
+                                            500.0,
+                                            750.0,
+                                            1000.0,
+                                            2500.0,
+                                            5000.0,
+                                            7500.0,
+                                            10000.0
+                                        ],
+                                        "min": 15,
+                                        "max": 15,
+                                        "exemplars": []
+                                    },
+                                    {
+                                        "attributes": {
+                                            "http.scheme": "http",
+                                            "http.host": "127.0.0.1:8000",
+                                            "net.host.port": 8000,
+                                            "http.flavor": "1.1",
+                                            "http.method": "GET",
+                                            "http.server_name": "localhost:8000",
+                                            "http.status_code": 200,
+                                            "http.target": "/slow"
+                                        },
+                                        "start_time_unix_nano": 1786625346125571247,
+                                        "time_unix_nano": 1786625459310433276,
+                                        "count": 50,
+                                        "sum": 200,
+                                        "bucket_counts": [
+                                            0,
+                                            50,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "explicit_bounds": [
+                                            0.0,
+                                            5.0,
+                                            10.0,
+                                            25.0,
+                                            50.0,
+                                            75.0,
+                                            100.0,
+                                            250.0,
+                                            500.0,
+                                            750.0,
+                                            1000.0,
+                                            2500.0,
+                                            5000.0,
+                                            7500.0,
+                                            10000.0
+                                        ],
+                                        "min": 4,
+                                        "max": 4,
+                                        "exemplars": []
+                                    },
+                                    {
+                                        "attributes": {
+                                            "http.scheme": "http",
+                                            "http.host": "127.0.0.1:8000",
+                                            "net.host.port": 8000,
+                                            "http.flavor": "1.1",
+                                            "http.method": "GET",
+                                            "http.server_name": "localhost:8000",
+                                            "http.status_code": 500,
+                                            "http.target": "/flaky"
+                                        },
+                                        "start_time_unix_nano": 1786625346155028191,
+                                        "time_unix_nano": 1786625459310433276,
+                                        "count": 24,
+                                        "sum": 648,
+                                        "bucket_counts": [
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            24,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "explicit_bounds": [
+                                            0.0,
+                                            5.0,
+                                            10.0,
+                                            25.0,
+                                            50.0,
+                                            75.0,
+                                            100.0,
+                                            250.0,
+                                            500.0,
+                                            750.0,
+                                            1000.0,
+                                            2500.0,
+                                            5000.0,
+                                            7500.0,
+                                            10000.0
+                                        ],
+                                        "min": 27,
+                                        "max": 27,
+                                        "exemplars": []
+                                    },
+                                    {
+                                        "attributes": {
+                                            "http.scheme": "http",
+                                            "http.host": "127.0.0.1:8000",
+                                            "net.host.port": 8000,
+                                            "http.flavor": "1.1",
+                                            "http.method": "GET",
+                                            "http.server_name": "localhost:8000",
+                                            "http.status_code": 200,
+                                            "http.target": "/flaky"
+                                        },
+                                        "start_time_unix_nano": 1786625346486236867,
+                                        "time_unix_nano": 1786625459310433276,
+                                        "count": 26,
+                                        "sum": 390,
+                                        "bucket_counts": [
+                                            0,
+                                            0,
+                                            0,
+                                            26,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "explicit_bounds": [
+                                            0.0,
+                                            5.0,
+                                            10.0,
+                                            25.0,
+                                            50.0,
+                                            75.0,
+                                            100.0,
+                                            250.0,
+                                            500.0,
+                                            750.0,
+                                            1000.0,
+                                            2500.0,
+                                            5000.0,
+                                            7500.0,
+                                            10000.0
+                                        ],
+                                        "min": 15,
+                                        "max": 15,
+                                        "exemplars": []
+                                    }
+                                ],
+                                "aggregation_temporality": 2
+                            }
+                        }
+                    ],
+                    "schema_url": "https://opentelemetry.io/schemas/1.11.0"
+                }
+            ],
+            "schema_url": ""
+        }
+    ]
+}
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     172.17.0.4:49696 - "GET /metrics HTTP/1.1" 200 OK
