@@ -5,3 +5,4 @@ opentelemetry-exporter-otlp
 prometheus-fastapi-instrumentator 
 redis
 #opentelemetry-bootstrap -a install
+psycopg2-binary
