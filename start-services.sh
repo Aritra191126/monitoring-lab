@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+echo "Starting toy app"
+#docker run -d --name monitoring-lab-app -p 8000:8000 monitoring-lab-app
 echo "== Jaeger =="
 docker start jaeger 2>/dev/null || docker run -d --name jaeger \
   -p 16686:16686 -p 4317:4317 \
