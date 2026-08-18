@@ -2,12 +2,17 @@ groups:
   - name: flaky_alerts
     rules:
       - alert: FlakyHighErrorRate
+        # NOTE: metric name/status label look off - instrumentator exposes
+        # http_requests_total (not https_) and status is a numeric string
+        # like "500", not the literal "5xx". Left as-is since it's outside
+        # today's ask, but this rule likely isn't firing as written.
         expr: rate(https_requests_total{handler="/flaky", status="5xx"}[5m])/rate(https_requests_total{handler="/flaky"}[5m]) > 0.35
         for: 30s
         labels:
           severity: warning
         annotations:
-          summary: "Flaky endpoint error rate above 35%"  
+          summary: "Flaky endpoint error rate above 35%"
+
   - name: redis_alerts
     rules:
       - alert: RedisTooManyConnections
@@ -15,8 +20,25 @@ groups:
         for: 15s
         labels:
           severity: warning
-        annotations: 
-          summary: "Redis has more than 20 connected clients" 
+          service: redis
+          role: root-cause
+        annotations:
+          summary: "Redis has more than 20 connected clients"
+
+      - alert: RedisEndpointErrors
+        expr: |
+          sum(rate(http_requests_total{handler="/redis", status=~"5.."}[1m]))
+          /
+          sum(rate(http_requests_total{handler="/redis"}[1m])) > 0.2
+        for: 30s
+        labels:
+          severity: warning
+          service: redis
+          role: symptom
+        annotations:
+          summary: "Elevated error rate on /redis endpoint"
+          description: "More than 20% of /redis requests failed over the last minute."
+
   - name: postgres_alerts
     rules:
       - alert: PostgresHighConnections
@@ -24,5 +46,21 @@ groups:
         for: 15s
         labels:
           severity: warning
+          service: postgres
+          role: root-cause
         annotations:
-          summary: "Postgres connection count is unusually high"               
+          summary: "Postgres connection count is unusually high"
+
+      - alert: PostgresEndpointErrors
+        expr: |
+          sum(rate(http_requests_total{handler="/postgres", status=~"5.."}[1m]))
+          /
+          sum(rate(http_requests_total{handler="/postgres"}[1m])) > 0.2
+        for: 30s
+        labels:
+          severity: warning
+          service: postgres
+          role: symptom
+        annotations:
+          summary: "Elevated error rate on /postgres endpoint"
+          description: "More than 20% of /postgres requests failed over the last minute."

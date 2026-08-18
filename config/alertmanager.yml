@@ -2,4 +2,14 @@ route:
   receiver: 'console'
 receivers:
   - name: 'console'
-  
+
+inhibit_rules:
+  # If a root-cause alert (connection saturation) is firing for a given
+  # service, suppress the noisy symptom alert (endpoint error rate) for
+  # that same service.
+  - source_match:
+      role: root-cause
+    target_match:
+      role: symptom
+    equal:
+      - service
