@@ -1,6 +1,7 @@
 services:
   monitoring-lab-app:
     build: .
+    image: monitoring-lab-app
     container_name: monitoring-lab-app
     ports:
       - "8000:8000"
@@ -90,7 +91,7 @@ services:
     container_name: promtail
     volumes:
       - ./config/promtail-config.yml:/etc/promtail/config.yml
-      - ./app.log:/var/log/app/app.log
+      - /var/run/docker.sock:/var/run/docker.sock
     command: -config.file=/etc/promtail/config.yml
     depends_on:
       - loki
